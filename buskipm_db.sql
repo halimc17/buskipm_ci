@@ -10,10 +10,26 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2016-03-22 03:06:34
+Date: 2016-03-22 04:31:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for tb_bukutamu
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_bukutamu`;
+CREATE TABLE `tb_bukutamu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `pesan` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of tb_bukutamu
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for tb_news
